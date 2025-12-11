@@ -1,0 +1,12 @@
+# Mac cruft
+.DS_Store
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtualenv
+.venv/
+
+# Generated reports
+*.pdf

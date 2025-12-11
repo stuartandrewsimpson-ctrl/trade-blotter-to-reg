@@ -1,0 +1,3 @@
+customer_id,isin,ccy,position_quantity,fo_mtm,as_of_date
+CIF001,GB0000000002,GBP,200,1200.0,2025-01-10
+CIF002,GB0000000003,GBP,70,350.0,2025-01-10

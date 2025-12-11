@@ -73,24 +73,7 @@ Allocate position MtM to deals ∝ open_notional
 
 Control:
 
-Σ(deal_
-𝑚
-𝑡
-𝑚
-𝑎
-𝑙
-𝑙
-𝑜
-𝑐
-𝑎
-𝑡
-𝑒
-𝑑
-mtm
-a
-	​
-
-llocated) = FO MtM at position level (within rounding)
+Σ(deal_𝑚𝑡𝑚𝑎𝑙𝑙𝑜𝑐𝑎𝑡𝑒𝑑mtmallocated) = FO MtM at position level (within rounding)
 
 Builds trade-level GL postings
 

@@ -1,5 +1,3 @@
-Select all the existing text, delete it, and paste this full README:
-
 # Trade Blotter → Regulatory & Ledger Views
 
 *A small, opinionated demo of how the same economic reality is described in

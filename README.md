@@ -32,11 +32,7 @@ It’s not a production system; it’s a **teaching and interview artefact**.
 
 ## What the example does
 
-Main script:
-
-```bash
-examples/trading_subledger_report.py
-
+**Main script:** `examples/trading_subledger_report.py`
 
 It:
 

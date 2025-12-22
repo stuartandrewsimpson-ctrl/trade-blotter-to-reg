@@ -260,7 +260,29 @@ FO MTM deltas reconcile to MTM journal postings for most instruments, but one sl
 
 If you don’t have the notebook, you can still reproduce the same checks from the SQL views that the notebook builds — the only dependency is having the `data/` CSVs loaded as tables.
 
+## Databricks SQL notebook
 
+A Databricks SQL notebook version of the same demo lives here:
+
+- `databricks/Trading_Subledger_Demo_README_and_Controls.sql`
+
+### Import into Databricks
+1. In Databricks Workspace: **Create → Notebook**
+2. Choose language **SQL**
+3. Paste the contents of the `.sql` file, or import it via Workspace (if your workspace supports file import).
+4. Run top-to-bottom.
+
+### Data
+The notebook expects these tables in schema `demo`:
+
+- `fo_mtm_timeseries`
+- `fo_sec_positions`
+- `sec_positions`
+- `sec_trades`
+- `jnl_dr_cr_postings`
+- `tb_thin_ledger`
+
+The repo includes the corresponding CSVs in `/data` so the demo can be recreated.
 
 Licence
 

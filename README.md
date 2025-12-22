@@ -232,6 +232,36 @@ Replace the toy CSVs with real-ish anonymised data for internal demos
 
 Generate lineage diagrams from the steps (e.g. using Graphviz)
 
+
+---
+
+## Databricks demo (optional)
+
+This repo also has a Databricks-friendly version of the same story: load the CSVs into a `demo` schema, build simple “medallion” views (bronze/silver/gold), and run the two controls interactively in SQL.
+
+### What it shows in Databricks
+- **Bronze:** raw ingests (CSV → tables in `demo`)
+- **Silver:** typed/standardised views (clean joins / keys)
+- **Gold:** reconciliation views + reporting views
+
+Controls:
+- **Control 1 — Thin ledger rebuild:** rebuild balances as the cumulative sum of journal postings and compare to `tb_thin_ledger`.
+- **Control 2 — FO MTM delta vs MTM journals:** compare day-on-day FO MTM change to MTM journal postings on MTM accounts (400100/400200).
+
+Known break (intentional demo):
+FO MTM deltas reconcile to MTM journal postings for most instruments, but one slice (**CIF002 / GB0000000003**) has FO MTM changes with no corresponding MTM journal postings, causing a thin-ledger vs journals break on MTM accounts (**400100/400200**). This is surfaced by **Control 2** and explains the **Control 1** variance.
+
+### How to run it
+1. Create (or choose) a schema, e.g. `demo`
+2. Upload all CSVs in `data/` and create tables with matching names:
+   - `sec_trades`, `sec_positions`, `fo_sec_positions`, `fo_mtm_timeseries`,
+     `jnl_dr_cr_postings`, `tb_thin_ledger`
+3. Import / run the notebook (e.g. `Trading_Subledger_Demo_README_and_Controls`) top-to-bottom.
+
+If you don’t have the notebook, you can still reproduce the same checks from the SQL views that the notebook builds — the only dependency is having the `data/` CSVs loaded as tables.
+
+
+
 Licence
 
 MIT – use freely, adapt, and extend. No warranty.

@@ -1,0 +1,4 @@
+﻿isin,instrument_id,instrument_name,instrument_type,ccy,issuer_id,issue_date,maturity_date,day_count,settlement_convention,price_quote_convention,par_unit
+GB0000000001,UKTBL_20250130,UK Treasury Bill 0.00% 30-Jan-2025,T_BILL,GBP,ISS_UK_GOV,07/11/2024,30/01/2025,ACT/365F,T+1,PRICE_PER_100_PAR,100
+GB0000000002,UKTBL_20250213,UK Treasury Bill 0.00% 13-Feb-2025,T_BILL,GBP,ISS_UK_GOV,21/11/2024,13/02/2025,ACT/365F,T+1,PRICE_PER_100_PAR,100
+GB0000000003,UKTBL_20250313,UK Treasury Bill 0.00% 13-Mar-2025,T_BILL,GBP,ISS_UK_GOV,19/12/2024,13/03/2025,ACT/365F,T+1,PRICE_PER_100_PAR,100

@@ -1,0 +1,7 @@
+﻿customer_id,customer_name,customer_type,sector,country_code,lei,credit_rating,relationship_role,kyc_risk_band,onboard_date
+CIF001,Greenwich Money Market Fund,Fund,Asset Manager,GB,213800MMFDEMO000001,AA,Holder,Low,01/06/2018
+CIF002,Thamesview Bank plc,Bank,Depository Institution,GB,213800BANKDEMO0001,A,Counterparty,Medium,15/03/2012
+CIF003,Southwark Insurance Group,Insurance,Insurer,GB,213800INSDEMO00001,A-,Holder,Low,20/11/2009
+CIF004,Canary Wharf Clearing Ltd,Financial Market Infrastructure,CCP,GB,213800CCPDEMO00001,AA-,Counterparty,Medium,10/01/2014
+CIF005,London Borough Treasury Services,Public Sector,Local Authority,GB,213800LADTDEMO0001,AA,Holder,Low,01/04/2005
+CIF006,Arcadia Retail Treasury Ltd,Corporate,Non-Financial Corporate,GB,213800CORPDEMO0001,BBB,Counterparty,Medium,12/09/2016

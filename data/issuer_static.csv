@@ -1,0 +1,5 @@
+﻿issuer_id,issuer_name,issuer_type,sector,country_code,lei,issuer_rating,issuing_agency
+ISS_UK_GOV,United Kingdom (HM Government),Sovereign,Central Government,GB,21380097EEL8G33V0Z35,AA,Debt Management Office
+ISS_UK_DMO,UK Debt Management Office,Agency,Government Agency,GB,,AA,Debt Management Office
+ISS_US_GOV,United States of America,Sovereign,Central Government,US,5493001KJTIIGC8Y1R12,AA+,US Treasury
+ISS_DE_GOV,Federal Republic of Germany,Sovereign,Central Government,DE,529900T8BM49AURSDO55,AAA,Finance Agency
